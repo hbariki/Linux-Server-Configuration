@@ -69,10 +69,10 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 
 7. Install and configure Apache to serve a python mod_wsgi application:
  - Install apache using sudo apt-get install apache2.
- -type 54.237.230.200. You will see the apache ubuntu default page.
- -install mod_wsgi using sudo apt-get install libapache2-mod-wsgi.
- -You then need to configure Apache to handle requests using the WSGI module. You’ll do this by editing the /etc/apache2/sites-enabled/000-default.conf file. This file tells Apache how to respond to requests, where to find the files for a particular site and much more.
- -add the following line at the end of the <VirtualHost *:80>block, right before the closing </VirtualHost> line:WSGIScriprAlias/var/www/html/myapp.wsgi.
+ -Type 54.237.230.200. You will see the apache ubuntu default page.
+ -Install mod_wsgi using sudo apt-get install libapache2-mod-wsgi.
+ -You then need to configure Apache to handle requests using the WSGI module. You’ll do this by editing the /etc/apache2/sites-  enabled/000-catalog.conf file. This file tells Apache how to respond to requests, where to find the files for a particular site and much more.
+ -Add the following line at the end of the <VirtualHost *:80>block, right before the closing </VirtualHost>   line:WSGIScriprAlias/var/www/html/myapp.wsgi.
  -restart Apache with the sudo apache2ctl restart command.
  -WSGI is a specification that describes how a web server communicates with web applications. Most if not all Python web frameworks are WSGI compliant, including Flask and Django; but to quickly test if you have your Apache configuration correct you’ll write a very basic WSGI application.
  -create /var/www/html/myapp.wsgi using command sudo nano /var/www/html/myapp.wsgi. Write the following in this file.

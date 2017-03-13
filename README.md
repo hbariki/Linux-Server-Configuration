@@ -252,7 +252,7 @@ Resources: https://www.digitalocean.com/community/tutorials/how-to-secure-postgr
  ``` ALTER TABLE menu_item ALTER COLUMN description TYPE text ```
 - Restart Apache: ``` sudo service apache2 restart ```
 -cd /var/www/catalog/catalog: execute - ``` Python __init__.py```
--type public IP address (http://54.237.230.200/) and you will see the Restaurants Menu webpage.
+-type public IP address (http://54.237.230.200/) and you will find the Itemcatalog project in the webpage.
 -change the paths in your __init__.py into
  ``` CLIENT_ID = json.loads(open('/var/www/catalog/catalog', r).read())['web']['client_id'] ```
  

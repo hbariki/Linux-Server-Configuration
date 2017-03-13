@@ -19,11 +19,11 @@ Configuration steps:
  
 2. Follow the instructions provided to SSH into your server.
 
- - Login with this command from your computer to connect to the server. ```ssh@ubuntu54.237.230.200 -p -i "path for your pem keys"```.
+ - Login with this command from your computer to connect to the server. ```ssh@ubuntu54.237.230.200 -p -i path to your pem keys ```.
  - Add other user grader using command 'sudo adduser grader'.
  - To check user grader information. Use this commands
-   sudo apt-get install finger
-   finger grader
+  ``` sudo apt-get install finger
+   finger grader ```
 - Use ssh-keygen to generate public and private keys in your machine.
 - Use the commands to paste public key into your server.
     1.mkdir .ssh
@@ -36,9 +36,9 @@ Configuration steps:
     8.Private key cant be shared.
     
 3.Give the grader the permission to sudo
- - Use sudo visudo (edit the sudoers file. it is save to use sudo visudo to edit the sudoers file otherwise file will not be saved)
+ - Use ```sudo visudo ``` (edit the sudoers file. it is save to use sudo visudo to edit the sudoers file otherwise file will not be saved)
  - add the below line of code after root ALL=(ALL:ALL) ALL and save it (ctrl-X, then Y and Enter)
- - you can check the grader entry by below command: sudo cat/etc/sudoers.
+ - you can check the grader entry by below command: ``` sudo cat/etc/sudoers ```
 
 4.Configure the Uncomplicated Firewall(UFW) to only allow incoming connections for SSH(port 2200), HTTP(port80), and NTP(port 123)
 - check the firewall status using 'sudo ufw status'

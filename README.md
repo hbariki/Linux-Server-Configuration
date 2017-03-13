@@ -41,15 +41,15 @@ Configuration steps:
  - you can check the grader entry by below command: ``` sudo cat/etc/sudoers ```
 
 4.Configure the Uncomplicated Firewall(UFW) to only allow incoming connections for SSH(port 2200), HTTP(port80), and NTP(port 123)
-- check the firewall status using 'sudo ufw status'
-- block all incoming connections on all ports using sudo ufw default deny incoming
-- allow outgoing connections on all ports using sudo ufw default allow outgoing.
-- allow incoming connection for (SSH port 2200) using sudo ufw allow 2200/tcp.
-- allow incoming connection for HTTP(port80) using sudo ufw allow 80/tcp.
-- allow incoming connection for NTP(port 123) using sudo ufw allow 123/udp.
-- check the added rules using sudo ufw show added.
-- enable the firewall using sudo ufw enable.
-- check whether firewall is enable or not using sudo ufw status.
+- check the firewall status using ```sudo ufw status```
+- block all incoming connections on all ports using ```sudo ufw default deny incoming```
+- allow outgoing connections on all ports using ```sudo ufw default allow outgoing```
+- allow incoming connection for (SSH port 2200) using ```sudo ufw allow 2200/tcp```
+- allow incoming connection for HTTP(port80) using ```sudo ufw allow 80/tcp```
+- allow incoming connection for NTP(port 123) using ```sudo ufw allow 123/udp```
+- check the added rules using ```sudo ufw show added```.
+- enable the firewall using ```sudo ufw enable```
+- check whether firewall is enable or not using ```sudo ufw status```
 
 Resources : https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/modules/357367901175461/lessons/4331066009/concepts/48010894990923#
 
@@ -58,7 +58,7 @@ Resources : https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/mo
 Resources - timezone to UTC
 
 6. Install Git
-- Install git using sudo apt-get install git
+- Install git using ``` sudo apt-get install git-all ```
 - set up git using:
    git config --global user.name "username"
    git config --global user.name "email@domain.com"

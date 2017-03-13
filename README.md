@@ -67,7 +67,7 @@ Resources - timezone to UTC
 Resources:
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 
-7. Install and configure Apache to serve a python mod_wsgi application:
+7.Install and configure Apache to serve a python mod_wsgi application:
  - Install apache using sudo apt-get install apache2.
  -Type 54.237.230.200. You will see the apache ubuntu default page.
  -Install mod_wsgi using sudo apt-get install libapache2-mod-wsgi.

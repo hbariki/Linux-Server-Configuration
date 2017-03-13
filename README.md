@@ -42,8 +42,8 @@ Configuration steps:
 
 4.Configure the Uncomplicated Firewall(UFW) to only allow incoming connections for SSH(port 2200), HTTP(port80), and NTP(port 123)
 - check the firewall status using 'sudo ufw status'
-- block all incoming connections on all ports using sudo ufw default deny incoming'
-- allow outgoing connections on all ports using sudo ufw default allow outgoing'.
+- block all incoming connections on all ports using sudo ufw default deny incoming
+- allow outgoing connections on all ports using sudo ufw default allow outgoing.
 - allow incoming connection for (SSH port 2200) using sudo ufw allow 2200/tcp.
 - allow incoming connection for HTTP(port80) using sudo ufw allow 80/tcp.
 - allow incoming connection for NTP(port 123) using sudo ufw allow 123/udp.
@@ -136,8 +136,9 @@ Step-4:
 
 ```sudo nano /etc/apache2/sites-available/catalog.conf```
 
--Add the following lines of code to the file to configure the virtual host. Be sure to change the ServerName to your domain or cloud servers Ip address.
- ```
+- Add the following lines of code to the file to configure the virtual host. Be sure to change the ServerName to your domain or cloud servers Ip address.
+
+```
  <VirtualHost *:80>
 		ServerName 54.237.230.200
 		ServerAdmin admin@mywebsite.com
@@ -182,18 +183,7 @@ from FlaskApp import app as application
 application.secret_key = 'Add your secret key'
  
 ```
-- Now your directory structure should look like this:
-```
-|--------FlaskApp
-|----------------FlaskApp
-|-----------------------static
-|-----------------------templates
-|-----------------------venv
-|-----------------------__init__.py
-|----------------flaskapp.wsgi
-
-```
-Step-6:
+Step-5:
 
 -Restart Apache with the following command to apply the changes:
 

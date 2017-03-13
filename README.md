@@ -58,11 +58,11 @@ Resources : https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/mo
 Resources - timezone to UTC
 
 6. Install Git
-- Install git using ``` sudo apt-get install git-all ```
-- set up git using:
+  - Install git using ``` sudo apt-get install git-all ```
+  - set up git using:
    git config --global user.name "username"
    git config --global user.name "email@domain.com"
--check the configurations items using git config --list
+  -check the configurations items using git config --list
 
 Resources:
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.

@@ -19,7 +19,7 @@ Configuration steps:
  
 2. Follow the instructions provided to SSH into your server.
 
- - Login with this command from your computer to connect to the server. 'ssh@ubuntu54.237.230.200 -p -i "path for your pem keys"'.
+ - Login with this command from your computer to connect to the server. ```ssh@ubuntu54.237.230.200 -p -i "path for your pem keys"```.
  - Add other user grader using command 'sudo adduser grader'.
  - To check user grader information. Use this commands
    sudo apt-get install finger
@@ -32,7 +32,7 @@ Configuration steps:
     4.give permissions chmod 700 .ssh and chmod 644 .ssh/authorized_keys
     5.nano /etc/ssh/ssh_config, change password to no.
     6.sudo service ssh restart.
-    7.ssh grader@54.237.230.200 -p 2200 -i ~/.ssh/project7 in new terminal.A pop-up willopen for authentication, just fill the password that you have fill during ssh-keygen creation.
+    7.```ssh grader@54.237.230.200 -p 2200 -i ~/.ssh/project7 ``` in new terminal.A pop-up willopen for authentication, just fill the password that you have fill during ssh-keygen creation.
     8.Private key cant be shared.
     
 3.Give the grader the permission to sudo

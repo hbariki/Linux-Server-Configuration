@@ -19,7 +19,7 @@ Configuration steps:
  
 2. Follow the instructions provided to SSH into your server.
 
- - Login with this command from your computer to connect to the server. ```ssh@ubuntu54.237.230.200 -p -i path to your pem keys ```.
+ - Login with this command from your computer to connect to the server. ```ssh@ubuntu54.237.230.200 -p -i ./LightSail.Key.pem ```.
  - Add other user grader using command 'sudo adduser grader'.
  - To check user grader information. Use this commands
   ``` sudo apt-get install finger

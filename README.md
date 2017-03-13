@@ -100,12 +100,12 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
  sudo a2emod wsgi.
  
  Step-2:
- -move to the /var/www directory.
- -create an application directory structure using mkdir sudo mkdir catalog
- -move inside this directory: cd catalog
- -create another directory: sudo mkdir catalog.
+ -move to the ```/var/www directory ```
+ -create an application directory structure using mkdir ```sudo mkdir catalog```
+ -move inside this directory: ```cd catalog```
+ -create another directory: ``` sudo mkdir catalog ```
  -move inside the directory and create two subdirectories named static and templates. cd catalog sudo mkdir static templates.
- -create the init.py file that will contain the flask application logic. sudo nano __init__.py
+ -create the init.py file that will contain the flask application logic. ```sudo nano __init__.py```
  -Add the following logic to the file.
  
  ```

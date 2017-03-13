@@ -50,7 +50,8 @@ Configuration steps:
 - check the added rules using sudo ufw show added.
 - enable the firewall using sudo ufw enable.
 - check whether firewall is enable or not using sudo ufw status.
-Resources - CONFIGURING LINUX WEB SERVER
+
+Resources : https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/modules/357367901175461/lessons/4331066009/concepts/48010894990923#
 
 5.Configure the local timezone to UTC
 -configure timezone using sudo dpkg-reconfigure tzdata(select none of the above and then set timezone to UTC)
@@ -62,7 +63,9 @@ Resources - timezone to UTC
    git config --global user.name "username"
    git config --global user.name "email@domain.com"
 -check the configurations items using git config --list
-Resources - install git on ubuntu.
+
+Resources:
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 
 7.Install and configure Apache to serve a python mod_wsgi application:
  - Install apache using sudo apt-get install apache2.
@@ -84,7 +87,9 @@ Resources - install git on ubuntu.
     return [output]
   ```  
  
-Resources - Web Application Servers course.
+ Resources :  https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/modules/357367901175461/lessons/4340119836/concepts/48159388430923#.
+
+
 8.Deploy flask application
 
  Step-1:
@@ -183,7 +188,7 @@ from FlaskApp import app as application
 application.secret_key = 'Add your secret key'
  
 ```
-Step-5:
+Step-6:
 
 -Restart Apache with the following command to apply the changes:
 
@@ -192,6 +197,7 @@ Step-5:
 
 ```
 Resources: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+
 9.Clone the Github Repository
  - sudo mv UdacityItemcatalog ``` /var/www/catalog/catalog/ ```
  - The above command helps you to move the itemcatalog project to the directory /var/www/catalog/catalog.
@@ -231,9 +237,9 @@ Resources: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flas
  3.to see particular table: ``` \d [tablename]
  4.Select * from [TableName] to see the entries in the table
  5.\q and then exit the postgresql user
- 6.Restart postgresql using ``` sudo service postgresql restart ```.
+ 6.Restart postgresql using ``` sudo service postgresql restart ```
 
-Resources: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps, discussions form udacity
+Resources: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps, Udacity discussion forms
 
 
 12.Run the application: 
